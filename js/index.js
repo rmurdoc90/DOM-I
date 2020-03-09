@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// NAV SECTION
 
 let navBar1 = document.querySelector('a:nth-of-type(1)')
 navBar1.textContent = siteContent["nav"]["nav-item-1"]
@@ -59,6 +60,8 @@ navBar5.textContent = siteContent["nav"]["nav-item-5"]
 
 let navBar6 = document.querySelector('a:nth-of-type(6)')
 navBar6.textContent = siteContent["nav"]["nav-item-6"]
+
+// NAV SECTION
 
 // IMAGES
 
@@ -82,23 +85,43 @@ button.textContent = siteContent['cta']['button']
 
 // FEATURE CONTENT
 
-let featureContent = document.querySelector('h4:nth-of-type(1)')
-featureContent.textContent = siteContent['main-content']['features-h4']
+let mainH4 = document.querySelectorAll(".text-content h4");
+let mainText = document.querySelectorAll(".text-content p");
 
-let featureContent1 = document.querySelector('p:nth-of-type(1)')
-featureContent1.textContent = siteContent['main-content']['features-content']
+mainH4[0].textContent = siteContent["main-content"]["features-h4"];
+mainText[0].textContent = siteContent["main-content"]["features-content"];
 
 // FEATURE CONTENT END
 
 // ABOUT CONTENT
 
-let featureAbout = document.querySelector('h4:nth-of-type(2)')
-featureAbout.textContent = siteContent['main-content']['about-h4']
-
-let featureAbout1 = document.querySelector('p:nth-of-type(2)')
-featureAbout1.textContent = siteContent['main-content']['about-content']
+mainH4[1].textContent = siteContent["main-content"]["about-h4"];
+mainText[1].textContent = siteContent["main-content"]["about-content"];
 
 // ABOUT CONTENT END
+
+// SERVICES CONTENT
+
+mainH4[2].textContent = siteContent["main-content"]["services-h4"];
+mainText[2].textContent = siteContent["main-content"]["services-content"];
+
+
+// SERVICES CONTENT END
+
+// PRODUCT CONTENT
+
+mainH4[3].textContent = siteContent["main-content"]["product-h4"];
+mainText[3].textContent = siteContent["main-content"]["product-content"];
+
+
+// PRODUCT CONTENT END
+
+// VISION CONTENT
+
+mainH4[4].textContent = siteContent["main-content"]["vision-h4"];
+mainText[4].textContent = siteContent["main-content"]["vision-content"];
+
+// VISION CONTENT END
 
 
 
