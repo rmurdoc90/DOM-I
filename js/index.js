@@ -42,24 +42,34 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // NAV SECTION
+let navigationBar = document.querySelectorAll('a')
 
-let navBar1 = document.querySelector('a:nth-of-type(1)')
-navBar1.textContent = siteContent["nav"]["nav-item-1"]
+navigationBar[0].textContent = siteContent["nav"]["nav-item-1"]
+navigationBar[1].textContent = siteContent["nav"]["nav-item-2"]
+navigationBar[2].textContent = siteContent["nav"]["nav-item-3"]
+navigationBar[3].textContent = siteContent["nav"]["nav-item-4"]
+navigationBar[4].textContent = siteContent["nav"]["nav-item-5"]
+navigationBar[5].textContent = siteContent["nav"]["nav-item-6"]
 
-let navBar2 = document.querySelector('a:nth-of-type(2)')
-navBar2.textContent = siteContent["nav"]["nav-item-2"]
+navigationBar[0].style.color = 'green'
+navigationBar[1].style.color = 'green'
+navigationBar[2].style.color = 'green'
+navigationBar[3].style.color = 'green'
+navigationBar[4].style.color = 'green'
+navigationBar[5].style.color = 'green'
 
-let navBar3 = document.querySelector('a:nth-of-type(3)')
-navBar3.textContent = siteContent["nav"]["nav-item-3"]
+let navAdditions = document.createElement('a');
+navAdditions.textContent = "End Nav"
 
-let navBar4 = document.querySelector('a:nth-of-type(4)')
-navBar4.textContent = siteContent["nav"]["nav-item-4"]
+let navAddition = document.createElement('a');
+navAddition.textContent = "Beginning Nav"
 
-let navBar5 = document.querySelector('a:nth-of-type(5)')
-navBar5.textContent = siteContent["nav"]["nav-item-5"]
+let newNav = document.querySelector('nav')
 
-let navBar6 = document.querySelector('a:nth-of-type(6)')
-navBar6.textContent = siteContent["nav"]["nav-item-6"]
+newNav.appendChild(navAdditions)
+newNav.prepend(navAddition)
+
+
 
 // NAV SECTION
 
@@ -122,6 +132,28 @@ mainH4[4].textContent = siteContent["main-content"]["vision-h4"];
 mainText[4].textContent = siteContent["main-content"]["vision-content"];
 
 // VISION CONTENT END
+
+// ADDRESS
+
+let contactP = document.querySelectorAll('.contact p')
+let contactInfo = document.querySelector(".contact h4")
+contactInfo.textContent = siteContent['contact']['contact-h4']
+
+contactP[0].textContent = siteContent['contact']['address']
+contactP[1].textContent = siteContent['contact']['phone']
+contactP[2].textContent = siteContent['contact']['email']
+
+// ADDRESS END
+
+// FOOTER
+
+let footerInfo = document.querySelector('footer p')
+footerInfo.textContent = siteContent['footer']['copyright']
+
+// FOOTER END
+
+// let greenText = document.querySelectorAll('a')
+greenText.style.color = 'green'
 
 
 
